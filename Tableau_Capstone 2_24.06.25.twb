@@ -1,0 +1,1560 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0520.1026                               -->
+<workbook original-version='18.1' source-build='2025.1.2 (20251.25.0520.1026)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Transjakarta' inline='true' name='federated.0nfc5j61urgvpb14nqy301fkedob' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Transjakarta' name='textscan.1vd8e710gr1g0g1ftiq5b19ro46z'>
+            <connection class='textscan' directory='C:/Users/user/Desktop/Purwadhika/2. Materi/2. MySql/Capstone Project' filename='Transjakarta.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1vd8e710gr1g0g1ftiq5b19ro46z' name='Transjakarta.csv' table='[Transjakarta#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='id_ID'>
+            <column datatype='string' name='transID' ordinal='0' />
+            <column datatype='integer' name='payCardID' ordinal='1' />
+            <column datatype='string' name='payCardBank' ordinal='2' />
+            <column datatype='string' name='payCardName' ordinal='3' />
+            <column datatype='string' name='payCardSex' ordinal='4' />
+            <column datatype='integer' name='payCardBirthDate' ordinal='5' />
+            <column datatype='string' name='corridorID' ordinal='6' />
+            <column datatype='string' name='corridorName' ordinal='7' />
+            <column datatype='string' name='direction' ordinal='8' />
+            <column datatype='string' name='tapInStops' ordinal='9' />
+            <column datatype='string' name='tapInStopsName' ordinal='10' />
+            <column datatype='string' name='tapInStopsLat' ordinal='11' />
+            <column datatype='string' name='tapInStopsLon' ordinal='12' />
+            <column datatype='integer' name='stopStartSeq' ordinal='13' />
+            <column datatype='datetime' name='tapInTime' ordinal='14' />
+            <column datatype='string' name='tapOutStops' ordinal='15' />
+            <column datatype='string' name='tapOutStopsName' ordinal='16' />
+            <column datatype='string' name='tapOutStopsLat' ordinal='17' />
+            <column datatype='string' name='tapOutStopsLon' ordinal='18' />
+            <column datatype='string' name='stopEndSeq' ordinal='19' />
+            <column datatype='datetime' name='tapOutTime' ordinal='20' />
+            <column datatype='string' name='payAmount' ordinal='21' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rp&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;id_ID&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transID]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>transID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payCardID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[payCardID]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>payCardID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payCardBank</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payCardBank]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>payCardBank</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payCardName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payCardName]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>payCardName</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payCardSex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payCardSex]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>payCardSex</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payCardBirthDate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[payCardBirthDate]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>payCardBirthDate</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>corridorID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[corridorID]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>corridorID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>corridorName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[corridorName]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>corridorName</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>direction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[direction]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>direction</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapInStops</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tapInStops]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>tapInStops</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapInStopsName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tapInStopsName]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>tapInStopsName</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapInStopsLat</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tapInStopsLat]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>tapInStopsLat</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapInStopsLon</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tapInStopsLon]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>tapInStopsLon</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stopStartSeq</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stopStartSeq]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>stopStartSeq</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapInTime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[tapInTime]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>tapInTime</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapOutStops</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tapOutStops]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>tapOutStops</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapOutStopsName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tapOutStopsName]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>tapOutStopsName</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapOutStopsLat</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tapOutStopsLat]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>tapOutStopsLat</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapOutStopsLon</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tapOutStopsLon]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>tapOutStopsLon</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stopEndSeq</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stopEndSeq]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>stopEndSeq</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapOutTime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[tapOutTime]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>tapOutTime</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payAmount</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payAmount]</local-name>
+            <parent-name>[Transjakarta.csv]</parent-name>
+            <remote-alias>payAmount</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Transjakarta.csv' datatype='table' name='[__tableau_internal_object_id__].[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[payCardID]' role='dimension' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/user/AppData/Local/Temp/TableauTemp/#TableauTemp_0fyhkl81py84sd1cejf001qm7pr1.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/24/2025 06:08:18 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>transID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[transID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>37900</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payCardID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[payCardID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payCardID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2897</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payCardBank</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payCardBank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payCardBank</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payCardName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payCardName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payCardName</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2898</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payCardSex</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payCardSex]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payCardSex</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payCardBirthDate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[payCardBirthDate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payCardBirthDate</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>corridorID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[corridorID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>corridorID</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>322</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>corridorName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[corridorName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>corridorName</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>338</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>direction</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[direction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>direction</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapInStops</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tapInStops]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapInStops</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3009</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapInStopsName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tapInStopsName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapInStopsName</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2983</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapInStopsLat</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tapInStopsLat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapInStopsLat</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2991</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapInStopsLon</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tapInStopsLon]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapInStopsLon</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2878</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stopStartSeq</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stopStartSeq]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stopStartSeq</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>85</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapInTime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[tapInTime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapInTime</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>37900</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapOutStops</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tapOutStops]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapOutStops</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2576</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapOutStopsName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tapOutStopsName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapOutStopsName</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2578</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapOutStopsLat</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tapOutStopsLat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapOutStopsLat</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2578</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapOutStopsLon</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tapOutStopsLon]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapOutStopsLon</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2510</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stopEndSeq</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stopEndSeq]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stopEndSeq</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>82</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapOutTime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[tapOutTime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapOutTime</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>35470</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payAmount</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payAmount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payAmount</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Transjakarta.csv' id='Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5'>
+            <properties context=''>
+              <relation connection='textscan.1vd8e710gr1g0g1ftiq5b19ro46z' name='Transjakarta.csv' table='[Transjakarta#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='id_ID'>
+                  <column datatype='string' name='transID' ordinal='0' />
+                  <column datatype='integer' name='payCardID' ordinal='1' />
+                  <column datatype='string' name='payCardBank' ordinal='2' />
+                  <column datatype='string' name='payCardName' ordinal='3' />
+                  <column datatype='string' name='payCardSex' ordinal='4' />
+                  <column datatype='integer' name='payCardBirthDate' ordinal='5' />
+                  <column datatype='string' name='corridorID' ordinal='6' />
+                  <column datatype='string' name='corridorName' ordinal='7' />
+                  <column datatype='string' name='direction' ordinal='8' />
+                  <column datatype='string' name='tapInStops' ordinal='9' />
+                  <column datatype='string' name='tapInStopsName' ordinal='10' />
+                  <column datatype='string' name='tapInStopsLat' ordinal='11' />
+                  <column datatype='string' name='tapInStopsLon' ordinal='12' />
+                  <column datatype='integer' name='stopStartSeq' ordinal='13' />
+                  <column datatype='datetime' name='tapInTime' ordinal='14' />
+                  <column datatype='string' name='tapOutStops' ordinal='15' />
+                  <column datatype='string' name='tapOutStopsName' ordinal='16' />
+                  <column datatype='string' name='tapOutStopsLat' ordinal='17' />
+                  <column datatype='string' name='tapOutStopsLon' ordinal='18' />
+                  <column datatype='string' name='stopEndSeq' ordinal='19' />
+                  <column datatype='datetime' name='tapOutTime' ordinal='20' />
+                  <column datatype='string' name='payAmount' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='BANK'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Transjakarta' name='federated.0nfc5j61urgvpb14nqy301fkedob' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nfc5j61urgvpb14nqy301fkedob'>
+            <column caption='Transjakarta.csv' datatype='table' name='[__tableau_internal_object_id__].[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[payCardBank]' derivation='None' name='[none:payCardBank:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[payCardBank]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[payCardBirthDate]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[stopStartSeq]' role='measure' type='quantitative' />
+            <column-instance column='[payCardBirthDate]' derivation='Sum' name='[sum:payCardBirthDate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[stopStartSeq]' derivation='Sum' name='[sum:stopStartSeq:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0nfc5j61urgvpb14nqy301fkedob].[Multiple Values]</rows>
+        <cols>[federated.0nfc5j61urgvpb14nqy301fkedob].[none:payCardBank:nk]</cols>
+      </table>
+      <simple-id uuid='{C8212D78-A08F-42A0-831D-0B828AAA4A35}' />
+    </worksheet>
+    <worksheet name='GENDER'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Transjakarta' name='federated.0nfc5j61urgvpb14nqy301fkedob' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nfc5j61urgvpb14nqy301fkedob'>
+            <column-instance column='[payCardSex]' derivation='Count' name='[cnt:payCardSex:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[payAmount]' derivation='None' name='[none:payAmount:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[payAmount]' role='dimension' type='nominal' />
+            <column datatype='string' name='[payCardSex]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0nfc5j61urgvpb14nqy301fkedob].[none:payAmount:nk]</rows>
+        <cols>[federated.0nfc5j61urgvpb14nqy301fkedob].[cnt:payCardSex:qk]</cols>
+      </table>
+      <simple-id uuid='{9CD4C656-1D67-412A-B70B-A63732D15B7D}' />
+    </worksheet>
+    <worksheet name='HISTOGRAM PEMBAYARAN'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Transjakarta' name='federated.0nfc5j61urgvpb14nqy301fkedob' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nfc5j61urgvpb14nqy301fkedob'>
+            <column caption='Transjakarta.csv' datatype='table' name='[__tableau_internal_object_id__].[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[payAmount]' derivation='None' name='[none:payAmount:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[payAmount]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[payCardBirthDate]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[stopStartSeq]' role='measure' type='quantitative' />
+            <column-instance column='[payCardBirthDate]' derivation='Sum' name='[sum:payCardBirthDate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[stopStartSeq]' derivation='Sum' name='[sum:stopStartSeq:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0nfc5j61urgvpb14nqy301fkedob].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.0nfc5j61urgvpb14nqy301fkedob].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0nfc5j61urgvpb14nqy301fkedob].[Multiple Values]</rows>
+        <cols>[federated.0nfc5j61urgvpb14nqy301fkedob].[none:payAmount:nk]</cols>
+      </table>
+      <simple-id uuid='{4BD8495F-08AA-47B7-9A9D-D4D65AC91E68}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F9714675-41E8-425B-8141-6641C04C1663}' />
+    </worksheet>
+    <worksheet name='TOP 10 KORIDOR'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Transjakarta' name='federated.0nfc5j61urgvpb14nqy301fkedob' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nfc5j61urgvpb14nqy301fkedob'>
+            <column caption='Transjakarta.csv' datatype='table' name='[__tableau_internal_object_id__].[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Transjakarta.csv_210411C9FC064D08B3F8EECA8FBF0BC5:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[corridorName]' role='dimension' type='nominal' />
+            <column-instance column='[corridorName]' derivation='None' name='[none:corridorName:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[payCardBirthDate]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[stopStartSeq]' role='measure' type='quantitative' />
+            <column-instance column='[payCardBirthDate]' derivation='Sum' name='[sum:payCardBirthDate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[stopStartSeq]' derivation='Sum' name='[sum:stopStartSeq:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0nfc5j61urgvpb14nqy301fkedob].[none:corridorName:nk]</rows>
+        <cols>[federated.0nfc5j61urgvpb14nqy301fkedob].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{D5800175-0061-4F50-AC3A-EE76B9D40FEE}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='HISTOGRAM PEMBAYARAN'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FE6BC978-28BC-4AA4-9C85-42F2051E4043}' />
+    </window>
+    <window class='worksheet' name='GENDER'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{50C4D82E-803C-4333-A78A-591B16D31D7C}' />
+    </window>
+    <window class='worksheet' name='BANK'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{39492A40-CE15-437A-A73A-683570B35B01}' />
+    </window>
+    <window class='worksheet' name='TOP 10 KORIDOR'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8539DDCD-BD67-4127-BC8C-4FDDFDB57271}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BAF6775D-28E3-4B21-A7A9-964FF36B424A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='BANK' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='159' name='GENDER' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='HISTOGRAM PEMBAYARAN' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 5' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='TOP 10 KORIDOR' width='192'>
+      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
+      cIJ1mTYY7QAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
